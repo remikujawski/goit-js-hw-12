@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      
-      
-
+      <section class="section portfolio-section">
+        <div class="container">
+          <form id="search-form"> 
+            <input type="search" id="searchbox" name="searchbox" placeholder="Search images...">
+            <button>Search</button>
+          </form>
+        </div>
+        <div class="container">
+          <div class="loader hidden">A search for images is in progress...</div>
+          <ul class="portfolio-list list">
+            <!-- Gallery items will be dynamically generated here -->
+          </ul>
+        </div>
+        <div class="container">
+          <button type="button" class="fetch-button hidden">Fetch more images..</button>
+          <div class="loader-alt hidden">A search for images is in progress...</div>
+        </div>
+      </section>
       
     </main>
 
     <load src="./partials/footer.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>
