@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-12</title>
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-D73Uttp0.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/styles-m4EbBM3a.css">
   </head>
   <body>
     <header class="header">
@@ -23,9 +25,24 @@
 
 
     <main>
-      
-      
-
+      <section class="section portfolio-section">
+        <div class="container">
+          <form id="search-form"> 
+            <input type="search" id="searchbox" name="searchbox" placeholder="Search images...">
+            <button>Search</button>
+          </form>
+        </div>
+        <div class="container">
+          <div class="loader hidden">A search for images is in progress...</div>
+          <ul class="portfolio-list list">
+            <!-- Gallery items will be dynamically generated here -->
+          </ul>
+        </div>
+        <div class="container">
+          <button type="button" class="fetch-button hidden">Fetch more images..</button>
+          <div class="loader-alt hidden">A search for images is in progress...</div>
+        </div>
+      </section>
       
     </main>
 
@@ -44,7 +61,6 @@
     </p>
   </div>
 </footer>
-
 
   </body>
 </html>
